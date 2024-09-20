@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoPlayer</title>
+    <link rel="icon" href="./assets/svg/logo.svg">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="section wrapper_header">
+            <div class="header_title">
+                <span data-i18="video">Video</span>
+            </div>
+        </div>       
+    </header>
+    <main class="main">
+        <div class="section wrapper_player">
+            <div class="player">
+                <video class="video viewer" src="./assets/video/video.mp4" poster="./assets/img/video-player.jpg"></video>
+                <button type="button" title="play" class="player_button video_button"></button>
+                <div class="control_panel invis">
+                    <button type="button" title="toggle_play_btn" class="player_button video_toggle">
+                        <div class="play_btn_icon"></div>
+                    </button>
+                    <div class="progress_bar">
+                        <div class="progress"></div>
+                    </div>
+                    <button type="button" title="vol_btn" class="player_button video_vol">
+                        <div class="btn_volume_icon"></div>
+                    </button>
+                    <input type="range" title="volume_bar" value="40" min="0" max="100" step="1" class="volume">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="section wrapper_footer">
+            <div class="footer_data">
+                <p class="copyright">©</p>
+                <p class="year">2024</p>
+                <a class="github_link" href="https://github.com/Anna1719">github</a>
+            </div>
+            <a class="footer_rs-school" href="https://rs.school/courses/javascript-ru">Rolling Scopes School</a>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
